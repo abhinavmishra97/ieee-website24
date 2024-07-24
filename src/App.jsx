@@ -1,7 +1,25 @@
-function App() {
-  return (
-    <h1>website</h1>
-  )
-}
+import React, { useState, useEffect, Fragment } from "react";
+import Home from "./routes/home.component";
+import Preloader from "./components/preloader/preloader.component";
 
-export default App
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // fpr changing the delay duration of preloader
+  }, []);
+
+  return (
+    <Fragment>
+      {loading ? (
+        <Preloader />
+      ) : (
+        <Home />
+      )}
+    </Fragment>
+  );
+};
+
+export default App;
