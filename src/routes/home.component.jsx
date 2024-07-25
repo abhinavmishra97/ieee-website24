@@ -5,6 +5,7 @@ import Title from "../components/title/title.component";
 import AboutSBJIIT from "../components/about/about.component";
 import './home.style.css'
 import Footer from "../components/footer/footer.component";
+import Team from "../components/team/team.component";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
                 <Robo />
                 <Title />
                 <AboutSBJIIT />
+                <Team />
                 <Footer />
             </div>
 
