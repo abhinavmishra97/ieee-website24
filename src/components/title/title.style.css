@@ -1,77 +1,81 @@
 .content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 80%;
-    max-width: 1200px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .text-container {
-    padding-left: 10px; /* Adjust the padding as needed */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-left: 8px solid rgb(0, 0, 0);
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
-  }
-  
-  .ieee {
-    font-family: Arial, sans-serif;
-    font-size: 100px; 
-    font-weight: 700; 
-    color: #2C387E;
-    margin: 0;
-  }
-  
-  .sb-ieee {
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    font-weight: 700; 
-    color: #2C387E;
-    margin: 0;
-  }
-  
-  .title-container {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 70%;
-    padding: 10px 20px;
-    /* pointer-events: none; */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease 0.5s forwards;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text-container {
+  padding-left: 10px; /* Adjust the padding as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 8px solid rgb(0, 0, 0);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.ieee-container {
+  display: flex; /* Ensure IEEE and ReactPlayer are in a row */
+  align-items: center; /* Align items vertically */
+}
+
+.ieee {
+  font-family: Arial, sans-serif;
+  font-size: 100px; 
+  font-weight: 700; 
+  color: #2C387E;
+  margin: 0;
+}
+
+.sb-ieee {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700; 
+  color: #2C387E;
+  margin: 0;
+}
+
+.title-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 70%;
+  padding: 10px 20px;
+  /* pointer-events: none; */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease 0.5s forwards;
+}
+
+.title {
+  font-family: "Lexend Tera", sans-serif;
+  font-size: 50px;
+  color: #0f0f0f;
+  font-weight: bold;
+  font-optical-sizing: auto;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 768px) {
   .title {
-    font-family: "Lexend Tera", sans-serif;
-    font-size: 50px;
-    color: #0f0f0f;
-    font-weight: bold;
-    font-optical-sizing: auto;
-    transition: font-size 0.3s ease, color 0.3s ease;
-  }
-  
-  @media (max-width: 768px) {
-    .title {
       font-size: 18px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .title {
+}
+
+@media (max-width: 480px) {
+  .title {
       font-size: 16px;
-    }
   }
-  
-  @keyframes fadeInUp {
-    to {
+}
+
+@keyframes fadeInUp {
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
+}

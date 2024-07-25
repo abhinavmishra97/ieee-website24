@@ -1,14 +1,24 @@
 import React from "react";
 import './title.style.css';
+import ReactPlayer from "react-player";
+import logoTr from '../../assets/logo_tr.webm';
 
 const Title = () => {
     return (
         <div className="content-container">
             <div className="title-container">
                 <div className="logo">
-                    {/* <img src={ieeeImage} className="ieeeText" alt="IEEE Logo" /> */}
                     <div className="text-container">
-                        <p className="ieee">IEEE</p>
+                        <div className="ieee-container">
+                            <p className="ieee">IEEE</p>
+                            <ReactPlayer url={logoTr}
+                                className="logo-video"
+                                width="190px"
+                                height="auto"
+                                playing
+                                loop />
+
+                        </div>
                         <p className="sb-ieee">STUDENT BRANCH JIIT</p>
                     </div>
                 </div>

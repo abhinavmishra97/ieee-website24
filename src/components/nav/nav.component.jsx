@@ -3,7 +3,7 @@
 
 import './nav.style.css';
 import React, { useState } from 'react';
-// import logo from '../../assets/ieeeLogo.webp';
+import logo from '../../assets/ieeeLogo.webp';
 
 
 const Navbar = () => {
@@ -27,26 +27,29 @@ const Navbar = () => {
 
     return (
         <>
+            <div className='topLogoContainer'>
 
+                <div className='navContainer'>
 
-            <div className='navContainer'>
+                    <ul className={`navigation ${activeIndex !== null ? 'contracted' : ''} ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+                        {['Home', 'Events', 'About Us', 'Team', 'Contact Us'].map((item, index) => (
+                            <li
+                                key={index}
+                                className={(activeIndex !== null && activeIndex !== index) ? 'hidden' : ''}
+                                onClick={() => item === 'Home' ? handleHomeClick() : handleItemClick(index)}
+                            >
+                                <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
+                            </li>
+                        ))}
+                        <li className='circle' onClick={handleHomeClick}></li>
 
-                <ul className={`navigation ${activeIndex !== null ? 'contracted' : ''} ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-                    {['Home', 'Events', 'About Us', 'Team', 'Contact Us'].map((item, index) => (
-                        <li
-                            key={index}
-                            className={(activeIndex !== null && activeIndex !== index) ? 'hidden' : ''}
-                            onClick={() => item === 'Home' ? handleHomeClick() : handleItemClick(index)}
-                        >
-                            <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
-                        </li>
-                    ))}
-                    <li className='circle' onClick={handleHomeClick}></li>
-
-                </ul>
-                {/* <button className={`mobile-menu-button ${isMobileMenuOpen ? 'close' : ''}`} onClick={handleMobileMenuToggle}>
+                    </ul>
+                    {/* <button className={`mobile-menu-button ${isMobileMenuOpen ? 'close' : ''}`} onClick={handleMobileMenuToggle}>
                 {isMobileMenuOpen ? '✖' : '☰'}
                 </button> */}
+                </div>
+                
+                <img src={logo} className='ieeelogo' alt='logo' />
             </div>
         </>
     );

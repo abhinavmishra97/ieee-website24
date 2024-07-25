@@ -8,7 +8,7 @@
     align-items: center;
     width: 100%;
     font-family: Mukta, sans-serif;
-    z-index: 5;
+    z-index: 100;
 }
 
 .navigation {
@@ -105,4 +105,12 @@
 
 .circle:hover {
     box-shadow: 0 0 20px rgba(30, 144, 255, 1);
+}
+
+.ieeelogo{
+    z-index: 10;
+    width: 80px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
 }
