@@ -7,6 +7,32 @@ import './home.style.css'
 import Footer from "../components/footer/footer.component";
 import Team from "../components/team/team.component";
 
+import abhinavSir from "./../assets/core-team-members/Abhinav.jpg";
+
+
+const members = [
+    {
+        image: abhinavSir,
+        name: 'John Doe',
+        post: 'Team Leader',
+    },
+    {
+        image: abhinavSir,
+        name: 'Jane Smith',
+        post: 'Project Manager',
+    },
+    {
+        image: abhinavSir,
+        name: 'Jane Smith',
+        post: 'Project Manager',
+    },
+    {
+        image: abhinavSir,
+        name: 'Jane Smith',
+        post: 'Project Manager',
+    },
+];
+
 const Home = () => {
     return (
         <Fragment>
@@ -15,7 +41,7 @@ const Home = () => {
                 <Robo />
                 <Title />
                 <AboutSBJIIT />
-                <Team />
+                <Team members={members}/>
                 <Footer />
             </div>
 
