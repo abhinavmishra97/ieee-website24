@@ -1,10 +1,7 @@
-// responsive part is left 
-
-
 import './nav.style.css';
 import React, { useState } from 'react';
 import logo from '../../assets/ieeeLogo.webp';
-
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -12,46 +9,44 @@ const Navbar = () => {
 
     const handleItemClick = (index) => {
         setActiveIndex(index);
-        setIsMobileMenuOpen(false);
+        if (window.innerWidth <= 768) {
+            setIsMobileMenuOpen(false);
+        }
     };
 
     const handleHomeClick = () => {
         setActiveIndex(null);
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        setIsMobileMenuOpen(false);
+        if (window.innerWidth <= 768) {
+            setIsMobileMenuOpen(false);
+        }
     };
 
     const handleMobileMenuToggle = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
+        setIsMobileMenuOpen(prev => !prev);
     };
 
     return (
-        <>
-            <div className='topLogoContainer'>
+        <div className='navContainer'>
+            <button className='mobile-menu-button' onClick={handleMobileMenuToggle}>
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
 
-                <div className='navContainer'>
+            <img src={logo} className='ieeelogo' alt='logo' />
 
-                    <ul className={`navigation ${activeIndex !== null ? 'contracted' : ''} ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-                        {['Home', 'Events', 'About Us', 'Team', 'Contact Us'].map((item, index) => (
-                            <li
-                                key={index}
-                                /*className={(activeIndex !== null && activeIndex !== index) ? 'hidden' : ''}*/
-                                onClick={() => item === 'Home' ? handleHomeClick() : handleItemClick(index)}
-                            >
-                                <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
-                            </li>
-                        ))}
-                        <li className='circle' onClick={handleHomeClick}></li>
-
-                    </ul>
-                    <button className={`mobile-menu-button ${isMobileMenuOpen ? 'close' : ''}`} onClick={handleMobileMenuToggle}>
-                    {isMobileMenuOpen ? '✖' : '☰'}
-                    </button>
-                </div>
-
-                <img src={logo} className='ieeelogo' alt='logo' />
-            </div>
-        </>
+            <ul className={`navigation ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+                {['Home', 'Events', 'About Us', 'Team', 'Contact Us'].map((item, index) => (
+                    <li
+                        key={index}
+                        className={activeIndex === index ? 'active' : ''}
+                        onClick={() => item === 'Home' ? handleHomeClick() : handleItemClick(index)}
+                    >
+                        <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
+                    </li>
+                ))}
+                <li className='circle' onClick={handleHomeClick}></li>
+            </ul>
+        </div>
     );
 };
 
