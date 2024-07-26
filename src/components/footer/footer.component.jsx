@@ -1,6 +1,12 @@
 import React from 'react';
 import './footer.styling.css'; 
+
 import ieeeLogo from '../../assets/ieee_logo_footer.png';
+import facebookLogo from '../../assets/footer-logos/facebook.png';
+import linkedinLogo from '../../assets/footer-logos/linkedin.png';
+import instagramLogo from '../../assets/footer-logos/instagram.png';
+import whatsappLogo from '../../assets/footer-logos/whatsapp.png';
+import githubLogo from '../../assets/footer-logos/github3.png';
 
 const Footer = () => {
     return (
@@ -19,19 +25,19 @@ const Footer = () => {
                     <h3>Connect with us</h3>
                     <div className="social-media">
                         <a href="https://www.instagram.com/ieeesbjiit?igsh=bnk1amRxeGdxNGts" target="_blank" rel="noopener noreferrer">
-                            <img src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="Instagram" />
+                            <img src={instagramLogo} alt="Instagram" />
                         </a>
                         <a href="https://www.facebook.com/ieeesbjiit/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000" alt="Facebook" className='whiteBg'/>
+                            <img src={facebookLogo} alt="Facebook" className='whiteBg'/>
                         </a>
                         <a href="https://github.com/ieeesbjiit" target="_blank" rel="noopener noreferrer">
-                            <img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="GitHub" className='whiteBg'/>
+                            <img src={githubLogo} alt="GitHub" className='whiteBg'/>
                         </a>
                         <a href="https://www.linkedin.com/company/ieee-student-branch-jiit/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
-                            <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn" />
+                            <img src={linkedinLogo} alt="LinkedIn" />
                         </a>
                         <a href="https://whatsapp.com/channel/0029VajH49o42DcniGpYxj3j" target="_blank" rel="noopener noreferrer">
-                            <img src="https://img.icons8.com/?size=100&id=5lQKOaVNF38O&format=png&color=000000" alt="WhatsApp" />
+                            <img src={whatsappLogo} alt="WhatsApp" />
                         </a>
                     </div>
                 </div>
