@@ -38,12 +38,12 @@ const Footer = () => {
             </div>
             <div class="developed-by">
             <p>Developed by 
-                <a href="https://github.com/apoorvmittal" target="_blank">Apoorv Mittal</a>, 
-                <a href="https://github.com/kritika-sharma7" target="_blank">Kritika Sharma</a>, 
-                <a href="https://github.com/kanak" target="_blank">Kanak</a>, 
-                <a href="https://github.com/akshitguptaa" target="_blank">Akshit Gupta</a>, 
-                <a href="https://github.com/yugjindal22" target="_blank">Yug Jindal</a>, and 
-                <a href="https://github.com/vansh0101" target="_blank">Vansh Sharma</a>
+                <a className='hover-color' href="https://github.com/Apoorv012" target="_blank"> Apoorv Mittal</a>, 
+                <a className='hover-color' href="https://github.com/kritika-sharma7" target="_blank"> Kritika Sharma</a>, 
+                <a className='hover-color' href="https://github.com/kanak" target="_blank"> Kanak</a>, 
+                <a className='hover-color' href="https://github.com/akshitguptaa" target="_blank"> Akshit Gupta</a>, 
+                <a className='hover-color' href="https://github.com/yugjindal22" target="_blank"> Yug Jindal</a>, and 
+                <a className='hover-color' href="https://github.com/vansh0101" target="_blank"> Vansh Sharma</a>
             </p>
         </div>
         </footer>

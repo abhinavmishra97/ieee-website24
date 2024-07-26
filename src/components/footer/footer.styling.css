@@ -74,6 +74,10 @@
     background-color: white;
 }
 
+.hover-color:hover {
+    color: #d97171;
+}
+
 @media (max-width: 768px) {
     .footer .container {
         flex-direction: column;
