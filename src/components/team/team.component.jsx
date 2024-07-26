@@ -1,9 +1,22 @@
 import React from "react";
 import "./team.style.css";
 
+import Typewriter from "typewriter-effect";
+
 const Team = ({ members }) => {
   return (
     <div className="team-component">
+      <h1>
+        <Typewriter
+          options={{
+            strings: ["Meet the team"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </h1>
+
+      <hr />
       <div className="team-container">
         {members.map((member, index) => (
           <div className="team-member" key={index}>
