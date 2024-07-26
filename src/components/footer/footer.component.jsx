@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="container">
                 <div className="left">
-                    <img src={ieeeLogo} alt="IEEE Logo" />
+                    <img className='ieee-logo-footer' src={ieeeLogo} alt="IEEE Logo" />
                 </div>
                 <div className="center">
                     <h3>Contact Us</h3>
