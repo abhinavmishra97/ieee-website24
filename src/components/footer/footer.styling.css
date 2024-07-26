@@ -70,6 +70,10 @@
     margin-bottom: 50px;
 }
 
+.whiteBg{
+    background-color: white;
+}
+
 @media (max-width: 768px) {
     .footer .container {
         flex-direction: column;

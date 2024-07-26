@@ -15,8 +15,9 @@ const Title = () => {
                                 className="logo-video"
                                 width="190px"
                                 height="auto"
-                                playing
-                                loop />
+                                playing={true}
+                                loop={true}
+                                muted={true} />
 
                         </div>
                         <p className="sb-ieee">STUDENT BRANCH JIIT</p>

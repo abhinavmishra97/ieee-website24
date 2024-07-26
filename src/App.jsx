@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from "react";
 import Home from "./routes/home.component";
-import Preloader from "./components/preloader/preloader.component";
+import Preloader from "./ui/preloader/preloader.component";
 
 const App = () => {
   const [loading, setLoading] = useState(true);

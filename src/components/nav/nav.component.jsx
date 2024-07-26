@@ -35,7 +35,7 @@ const Navbar = () => {
                         {['Home', 'Events', 'About Us', 'Team', 'Contact Us'].map((item, index) => (
                             <li
                                 key={index}
-                                className={(activeIndex !== null && activeIndex !== index) ? 'hidden' : ''}
+                                /*className={(activeIndex !== null && activeIndex !== index) ? 'hidden' : ''}*/
                                 onClick={() => item === 'Home' ? handleHomeClick() : handleItemClick(index)}
                             >
                                 <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
@@ -44,11 +44,11 @@ const Navbar = () => {
                         <li className='circle' onClick={handleHomeClick}></li>
 
                     </ul>
-                    {/* <button className={`mobile-menu-button ${isMobileMenuOpen ? 'close' : ''}`} onClick={handleMobileMenuToggle}>
-                {isMobileMenuOpen ? '✖' : '☰'}
-                </button> */}
+                    <button className={`mobile-menu-button ${isMobileMenuOpen ? 'close' : ''}`} onClick={handleMobileMenuToggle}>
+                    {isMobileMenuOpen ? '✖' : '☰'}
+                    </button>
                 </div>
-                
+
                 <img src={logo} className='ieeelogo' alt='logo' />
             </div>
         </>

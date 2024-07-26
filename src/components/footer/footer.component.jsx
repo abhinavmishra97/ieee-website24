@@ -1,4 +1,3 @@
-// Footer.js
 import React from 'react';
 import './footer.styling.css'; 
 import ieeeLogo from '../../assets/ieee_logo_footer.png';
@@ -23,16 +22,16 @@ const Footer = () => {
                             <img src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="Instagram" />
                         </a>
                         <a href="https://www.facebook.com/ieeesbjiit/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000" alt="Facebook" />
+                            <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000" alt="Facebook" className='whiteBg'/>
                         </a>
                         <a href="https://github.com/ieeesbjiit" target="_blank" rel="noopener noreferrer">
-                            <img src="https://img.icons8.com/?size=100&id=RHLuYrY4GjUv&format=png&color=000000" alt="GitHub" />
+                            <img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="GitHub" className='whiteBg'/>
                         </a>
                         <a href="https://www.linkedin.com/company/ieee-student-branch-jiit/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">
-                            <img src="linkdin-removebg-preview.png" alt="LinkedIn" />
+                            <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn" />
                         </a>
                         <a href="https://whatsapp.com/channel/0029VajH49o42DcniGpYxj3j" target="_blank" rel="noopener noreferrer">
-                            <img src="whatsapp-removebg-preview.png" alt="WhatsApp" />
+                            <img src="https://img.icons8.com/?size=100&id=5lQKOaVNF38O&format=png&color=000000" alt="WhatsApp" />
                         </a>
                     </div>
                 </div>

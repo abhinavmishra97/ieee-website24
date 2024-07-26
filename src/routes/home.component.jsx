@@ -3,12 +3,12 @@ import Robo from "../models/robo/robo.component";
 import Navbar from "../components/nav/nav.component";
 import Title from "../components/title/title.component";
 import AboutSBJIIT from "../components/about/about.component";
-import './home.style.css'
 import Footer from "../components/footer/footer.component";
 import Team from "../components/team/team.component";
 
 import abhinavSir from "./../assets/core-team-members/Abhinav.jpg";
 
+import './home.style.css'
 
 const members = [
     {
