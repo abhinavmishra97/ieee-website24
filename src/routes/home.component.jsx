@@ -7,7 +7,6 @@ import Footer from "../components/footer/footer.component";
 import Team from "../components/team/team.component";
 import WieAbout from "../components/wie-about/wieAbout.component";
 import WIEComponent from "../components/wie/wie.component";
-
 import abhinavSir from "./../assets/core-team-members/Abhinav.jpg";
 
 import './home.style.css'
@@ -46,11 +45,19 @@ const Home = () => {
             <Navbar />
             <Robo />
             <Title />
-            <AboutSBJIIT />
-            <Team members={members} />
-            <WieAbout />
-            <WIEComponent />
-            <Footer />
+            <section id="aboutus">
+                <AboutSBJIIT id="aboutus" />
+            </section>
+            <section id="wie">
+                <WieAbout />
+                <WIEComponent />
+            </section>
+            <section id="team">
+                <Team members={members} />
+            </section>
+            <footer id="contactus">
+                <Footer />
+            </footer>
         </Fragment>
     )
 }

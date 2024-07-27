@@ -35,7 +35,7 @@ const Navbar = () => {
             <img src={logo} className='ieeelogo' alt='logo' />
 
             <ul className={`navigation ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-                {['Home', 'Events', 'About Us', 'Team', 'Contact Us'].map((item, index) => (
+                {['Home', 'About Us','Events', 'Team', 'Contact Us'].map((item, index) => (
                     <li
                         key={index}
                         className={activeIndex === index ? 'active' : ''}

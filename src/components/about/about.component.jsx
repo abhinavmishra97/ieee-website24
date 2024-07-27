@@ -2,6 +2,7 @@ import React from 'react';
 import './about.style.css';
 
 const AboutSBJIIT = () => {
+
     return (
         <div className="about-container">
             <h1>About SB JIIT</h1>
