@@ -7,9 +7,9 @@ import anotherImg from "../../assets/wie-imgs/another-card.jpg";
 const WIEComponent = () => {
   return (
     <div className="wrapper">
-      <div className="cols">
+      <div className="wi">
         <div
-          className="col"
+          className="wii"
           onTouchStart={(e) => e.currentTarget.classList.toggle("hover")}
         >
           <div className="container">
@@ -32,7 +32,7 @@ const WIEComponent = () => {
           </div>
         </div>
         <div
-          className="col"
+          className="wii"
           onTouchStart={(e) => e.currentTarget.classList.toggle("hover")}
         >
           <div className="container">
@@ -55,7 +55,7 @@ const WIEComponent = () => {
           </div>
         </div>
         <div
-          className="col"
+          className="wii"
           onTouchStart={(e) => e.currentTarget.classList.toggle("hover")}
         >
           <div className="container">

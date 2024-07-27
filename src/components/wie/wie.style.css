@@ -10,7 +10,7 @@
 
 }
 
-.cols {
+.wi{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -30,7 +30,7 @@
     margin: 0;
 }
 
-.col {
+.wii{
     width: calc(25% - 2rem);
     margin: 1rem;
     cursor: pointer;
@@ -188,19 +188,19 @@
 }
 
 @media screen and (max-width: 64rem) {
-    .col {
+    .wii {
         width: calc(33.333333% - 2rem);
     }
 }
 
 @media screen and (max-width: 48rem) {
-    .col {
+    .wii {
         width: calc(50% - 2rem);
     }
 }
 
 @media screen and (max-width: 32rem) {
-    .col {
+    .wii {
         width: 100%;
         margin: 0 0 2rem 0;
     }
