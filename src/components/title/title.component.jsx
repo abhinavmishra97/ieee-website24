@@ -1,7 +1,8 @@
 import React from "react";
 import './title.style.css';
 import ReactPlayer from "react-player";
-import logoTr from '../../assets/logo_tr.webm';
+// import logoTr from '../../assets/logo_tr.webm';
+import logoTr from '../../assets/logo_tr - CROP.webm';
 
 const Title = () => {
     return (
