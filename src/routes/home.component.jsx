@@ -5,6 +5,8 @@ import Title from "../components/title/title.component";
 import AboutSBJIIT from "../components/about/about.component";
 import Footer from "../components/footer/footer.component";
 import Team from "../components/team/team.component";
+import WieAbout from "../components/wie-about/wieAbout.component";
+import WIEComponent from "../components/wie/wie.component";
 
 import abhinavSir from "./../assets/core-team-members/Abhinav.jpg";
 
@@ -33,18 +35,22 @@ const members = [
     },
 ];
 
+const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+
 const Home = () => {
     return (
         <Fragment>
-            <div className="home-container">
-                <Navbar />
-                <Robo />
-                <Title />
-                <AboutSBJIIT />
-                <Team members={members}/>
-                <Footer />
-            </div>
-
+            <Navbar />
+            <Robo />
+            <Title />
+            <AboutSBJIIT />
+            <Team members={members} />
+            <WieAbout />
+            <WIEComponent />
+            <Footer />
         </Fragment>
     )
 }

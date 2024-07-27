@@ -1,0 +1,136 @@
+@import "https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import "https://fonts.googleapis.com/css?family=Sacramento";
+@import "https://fonts.googleapis.com/css?family=Lato:300,900";
+@import "https://fonts.googleapis.com/css2?family=Lilita+One&family=Salsa&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Sacramento&display=swap";
+body {
+  background-color: white;
+  margin: 0;
+  font-family: Josefin Sans, sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1c3ae;
+  border-radius: 10px;
+}
+
+.blurred {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease-in-out;
+}
+.vim {
+  font-family: "Lato", sans-serif;
+  font-size: 9vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c7188;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.WieAbout {
+  margin: 100px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.WieAboutContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.WieAboutPhoto img {
+  width: 300px;
+}
+
+.WieAboutContent p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: Poppins;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .WieAboutContent {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .WieAboutContent p {
+    width: 30x;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+  .WieAboutContent p ul {
+    padding: 4px;
+    margin: 2px;
+  }
+}
+
+.WieAboutText p,
+.WieAboutText ul {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+p {
+  margin: 0;
+  padding: 0;
+  unicode-bidi: isolate;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 1em 0 1em 40px;
+  padding: 0;
+  unicode-bidi: isolate;
+}
+
+li {
+  unicode-bidi: isolate;
+}
+.wie-events {
+  font-family: "Lato", sans-serif;
+  font-size: 7vh;
+  text-align: left;
+  color: #2c7188;
+  background-color: white;
+  margin-bottom: 1px;
+  padding: 1px;
+  border-radius: 5px;
+}
+.backt {
+  font-size: 6vh;
+  color: white;
+}
