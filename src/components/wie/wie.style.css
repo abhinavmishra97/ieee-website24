@@ -8,7 +8,7 @@
     text-align: center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
+   margin-left: 70px;
 
 }
 
@@ -70,20 +70,20 @@
 
     height: auto;
     border-radius: 19px;
-    color: #5ba9ea;
+    color: #6cb2ec;
     font-size: 1.5rem;
     filter: brightness(2.6);
     border: 8px solid #072833;
 }
 
 .back {
-    background: #072833;
+    background: #55BCFF;
     /* Blue color */
-    background: -webkit-linear-gradient(45deg, #072833 0%, #072833 100%);
+    background: -webkit-linear-gradient(45deg, #55BCFF 0%, #072833 100%);
     /* Blue gradient */
-    background: -o-linear-gradient(45deg, #072833 0%, #072833 100%);
+    background: -o-linear-gradient(45deg, #55BCFF 0%, #55BCFF 100%);
     /* Blue gradient */
-    background: linear-gradient(45deg, #072833 0%, #072833 100%);
+    background: linear-gradient(45deg, #55BCFF 0%, #072833 100%);
     /* Blue gradient */
 }
 
