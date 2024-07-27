@@ -45,3 +45,15 @@
     opacity: 0;
     pointer-events: none;
 }
+
+@media screen and (max-width: 64rem) {
+    .top-btn {
+        width: 3rem;
+        height: 3rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+    .top-btn img{
+        width: 1.5rem;
+    }
+}

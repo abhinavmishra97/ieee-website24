@@ -44,7 +44,7 @@ const Navbar = () => {
                         <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
                     </li>
                 ))}
-                <li className='circle' onClick={handleHomeClick}></li>
+                {/* <li className='circle' onClick={handleHomeClick}></li> */}
             </ul>
         </div>
     );
