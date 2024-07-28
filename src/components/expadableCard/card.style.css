@@ -1,6 +1,6 @@
 .cardContainer {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,49 +8,56 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+
 .eventTitle h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: center;
-  }
+}
 
 .eventTitle hr {
-    border: 1px solid whitesmoke;
-    max-width: 400px;
+    border: 0.0625rem solid whitesmoke;
+    max-width: 25rem;
     margin: auto;
-  }
+}
 
 .cardSubContainer {
-    height: 400px;
+    height: 25rem;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start; 
+    justify-content: flex-start;
 }
 
 .card {
-    width: 80px;
-    border-radius: 2rem;
+    width: 5rem;
+    border-radius: 0.75rem;
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
-    margin: 0 10px;
+    border-radius: 2rem;
+    margin: 0 0.625rem;
     display: flex;
     align-items: flex-end;
-    transition: width 0.6s cubic-bezier(.28, -0.03, 0, .99), 
-                transform 0.3s ease, 
-                opacity 0.3s ease;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); /* Lighter shadow */
-    position: relative;
+    transition: transform 0.8s cubic-bezier(0.42, 0, 0.58, 1), width 0.8s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.8s cubic-bezier(0.42, 0, 0.58, 1);
+    box-shadow: 0 0.625rem 1.875rem -0.3125rem rgba(0,0,0,0.8);
+}
+
+.card.expanding {
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1), width 0.6s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card.contracting {
+    transition: transform 0.8s cubic-bezier(0.42, 0, 0.58, 1), width 0.8s cubic-bezier(0.42, 0, 0.58, 1), box-shadow 0.8s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .card.expanded {
-    width: 600px;
+    width: 37.5rem;
 }
 
 .card > .row {
     color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: nowrap;
-    width: 100%; /* Ensure full width */
+    width: 100%;
     position: relative;
 }
 
@@ -58,12 +65,12 @@
     background: #223;
     color: white;
     border-radius: 50%;
-    width: 50px;
+    width: 3.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px;
-    height: 50px;
+    margin: 0.9375rem;
+    height: 3.125rem;
 }
 
 .card > .row > .description {
@@ -73,12 +80,12 @@
     overflow: hidden;
     width: 100%;
     opacity: 0;
-    padding: 0 20px;
-    transform: translateY(30px);
-    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
-    background: rgba(255, 255, 255, 0.2); /* Increased transparency */
-    backdrop-filter: blur(7px); /* Increased blur */
-    box-sizing: border-box; 
+    padding: 0 1.25rem;
+    transform: translateY(1.875rem);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, background 0.4s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.4375rem);
+    box-sizing: border-box;
 }
 
 .card.expanded .description {
@@ -88,9 +95,9 @@
 
 .description p {
     color: #000;
-    padding-bottom: 30px;
-    font-size: 15px; 
-    margin: 0; 
+    padding-bottom: 1.875rem;
+    font-size: 0.9375rem;
+    margin: 0;
 }
 
 .description h4 {
@@ -99,7 +106,7 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .cardSubContainer {
         flex-direction: column;
         height: auto;
@@ -109,7 +116,7 @@
     .card,
     .card.expanded {
         width: 90%;
-        margin: 10px 0;
+        margin: 0.625rem 0;
     }
 
     .card .description,
