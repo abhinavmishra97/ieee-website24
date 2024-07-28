@@ -144,6 +144,7 @@
   );
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   z-index: -1;
+  transition: scale 0.3s;
 }
 .honeycomb-cell::before {
   background: #fff;
@@ -160,10 +161,12 @@
 }
 .honeycomb-cell:hover .honeycomb-cell_img {
   filter: grayscale(0%);
+  scale: 102%;
 }
 .honeycomb-cell:hover::before {
   background: rgb(28,17,179);
   background: linear-gradient(90deg, rgba(28,17,179,1) 0%, rgba(22,199,192,0.9632645294445903) 52%, rgba(41,124,196,1) 100%);
+  scale: 102.5%;
 }
 .honeycomb-cell:hover::after {
   opacity: 0;
