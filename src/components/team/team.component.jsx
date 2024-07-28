@@ -19,7 +19,10 @@ const Team = ({ members }) => {
       <hr />
       <div className="team-container">
         {members.map((member, index) => (
-          <div className="team-member" key={index}>
+          <div
+            className={`team-member ${index % 7 < 4 ? "row-even" : "row-odd"}`}
+            key={index}
+          >
             <img
               src={member.image}
               alt={member.name}

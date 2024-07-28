@@ -7,32 +7,8 @@ import Footer from "../components/footer/footer.component";
 import Team from "../components/team/team.component";
 import WieAbout from "../components/wie-about/wieAbout.component";
 import WIEComponent from "../components/wie/wie.component";
-import abhinavSir from "./../assets/core-team-members/Abhinav.jpg";
-
+import members from "../data/members";
 import './home.style.css'
-
-const members = [
-    {
-        image: abhinavSir,
-        name: 'John Doe',
-        post: 'Team Leader',
-    },
-    {
-        image: abhinavSir,
-        name: 'Jane Smith',
-        post: 'Project Manager',
-    },
-    {
-        image: abhinavSir,
-        name: 'Jane Smith',
-        post: 'Project Manager',
-    },
-    {
-        image: abhinavSir,
-        name: 'Jane Smith',
-        post: 'Project Manager',
-    },
-];
 
 const containerVariants = {
     hidden: { opacity: 0, y: 50 },
