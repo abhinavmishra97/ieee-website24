@@ -52,7 +52,19 @@
 } */
 
 .team-component {
+  margin-top: 130px;
   margin-bottom: 250px;
+}
+
+.team-component h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.team-component hr {
+  border: 1px solid whitesmoke;
+  max-width: 400px;
+  margin: auto;
 }
 
 .honeycomb {
@@ -150,7 +162,8 @@
   filter: grayscale(0%);
 }
 .honeycomb-cell:hover::before {
-  background: #fc5130;
+  background: rgb(28,17,179);
+  background: linear-gradient(90deg, rgba(28,17,179,1) 0%, rgba(22,199,192,0.9632645294445903) 52%, rgba(41,124,196,1) 100%);
 }
 .honeycomb-cell:hover::after {
   opacity: 0;

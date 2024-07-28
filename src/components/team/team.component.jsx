@@ -9,7 +9,7 @@ const Team = ({ members }) => {
       <h1>
         <Typewriter
           options={{
-            strings: ["Meet the team"],
+            strings: ["MEET THE TEAM"],
             autoStart: true,
             loop: true,
           }}
