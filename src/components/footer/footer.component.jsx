@@ -1,7 +1,9 @@
 import React from 'react';
 import './footer.styling.css'; 
 
-import ieeeLogo from '../../assets/ieee_logo_footer.png';
+import ieeeLogo from '../../assets/ieee_logo_footer trimmed.png';
+// import ieeeLogo from '../../assets/ieee_logo_footer.png';
+
 import facebookLogo from '../../assets/footer-logos/facebook.png';
 import linkedinLogo from '../../assets/footer-logos/linkedin.png';
 import instagramLogo from '../../assets/footer-logos/instagram.png';
