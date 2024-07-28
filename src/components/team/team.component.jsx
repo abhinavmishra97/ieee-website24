@@ -17,26 +17,21 @@ const Team = ({ members }) => {
       </h1>
 
       <hr />
-      <div className="team-container">
+
+      <ul className="honeycomb">
         {members.map((member, index) => (
-          <div
-            className={`team-member ${index % 7 < 4 ? "row-even" : "row-odd"}`}
-            key={index}
-          >
-            <img
-              src={member.image}
-              alt={member.name}
-              className="member-image"
-            />
-            <div className="overlay">
-              <div className="text">
-                <h3>{member.name}</h3>
-                <p>{member.post}</p>
-              </div>
-            </div>
-          </div>
+            <li className="honeycomb-cell">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="honeycomb-cell_img"
+              />
+              <div className="honeycomb-cell_title">{member.post}</div>
+            </li>
         ))}
-      </div>
+        <li className="honeycomb-cell honeycomb_Hidden">
+        </li>
+      </ul>
     </div>
   );
 };

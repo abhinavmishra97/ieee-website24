@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div class="developed-by">
+            <div className="developed-by">
             <p>Developed by 
                 <a className='hover-color' href="https://github.com/Apoorv012" target="_blank"> Apoorv Mittal</a>, 
                 <a className='hover-color' href="https://github.com/kritika-sharma7" target="_blank"> Kritika Sharma</a>, 
