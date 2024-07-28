@@ -4,20 +4,20 @@
   align-items: flex-start;
   width: 80%;
   max-width: 1200px;
-  padding: 20px;
+  padding: 1.25rem;
   box-sizing: border-box;
 }
 
 .text-container {
-  padding-left: 10px; 
+  padding-left: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-left: 8px solid rgb(0, 0, 0);
+  border-left: 0.5rem solid rgb(0, 0, 0); 
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(1.25rem); 
   animation: fadeInUp 1s ease forwards;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; 
 }
 
 .ieee-container {
@@ -27,7 +27,7 @@
 
 .ieee {
   font-family: Arial, sans-serif;
-  font-size: 100px; 
+  font-size: 6.25rem;
   font-weight: 700; 
   color: #0061a3;
   margin: 0;
@@ -35,28 +35,26 @@
 
 .sb-ieee {
   font-family: Arial, sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 700; 
   color: #0061a3;
   margin: 0;
-  
 }
 
 .title-container {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 1.25rem;
+  left: 1.25rem; 
   width: 70%;
-  padding: 10px 20px;
-  /* pointer-events: none; */
+  padding: 0.625rem 1.25rem;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   animation: fadeInUp 1s ease 0.5s forwards;
 }
 
 .title {
   font-family: "Lexend Tera", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem; /* 40px / 16px */
   color: #0f0f0f;
   font-weight: bold;
   font-optical-sizing: auto;
@@ -64,35 +62,35 @@
 }
 
 @media (max-width: 768px) {
-  .title-container{
+  .title-container {
     width: 90%;
   }
   .title {
-      font-size: 25px;
+    font-size: 1.5625rem;
   }
 }
 
 @media (max-width: 480px) {
-  .title-container{
-    left: 5px;
+  .title-container {
+    left: 0.3125rem;
   }
-  .ieee{
-    font-size: 80px;
+  .ieee {
+    font-size: 5rem;
   }
-  .sb-ieee{
-    font-size: 30px;
+  .sb-ieee {
+    font-size: 1.875rem;
   }
-  .text-container{
-    margin-bottom: 20px;
+  .text-container {
+    margin-bottom: 1.25rem; 
   }
   .title {
-      font-size: 25px;
+    font-size: 1.5rem; 
   }
 }
 
 @keyframes fadeInUp {
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
