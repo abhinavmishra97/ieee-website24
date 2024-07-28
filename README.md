@@ -1,3 +1,3 @@
 # IEEE Website - 2024
 
-Made by ......
+Developed by Apoorv Mittal, Kritika Sharma, Kanak, Akshit Gupta, Yug Jindal, and Vansh Sharma
