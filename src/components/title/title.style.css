@@ -9,7 +9,7 @@
 }
 
 .text-container {
-  padding-left: 10px; /* Adjust the padding as needed */
+  padding-left: 10px; 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,18 +17,19 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease forwards;
+  margin-bottom: 20px;
 }
 
 .ieee-container {
-  display: flex; /* Ensure IEEE and ReactPlayer are in a row */
-  align-items: center; /* Align items vertically */
+  display: flex; 
+  align-items: center;
 }
 
 .ieee {
   font-family: Arial, sans-serif;
   font-size: 100px; 
   font-weight: 700; 
-  color: #2C387E;
+  color: #0061a3;
   margin: 0;
 }
 
@@ -36,8 +37,9 @@
   font-family: Arial, sans-serif;
   font-size: 36px;
   font-weight: 700; 
-  color: #2C387E;
+  color: #0061a3;
   margin: 0;
+  
 }
 
 .title-container {
@@ -54,7 +56,7 @@
 
 .title {
   font-family: "Lexend Tera", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   color: #0f0f0f;
   font-weight: bold;
   font-optical-sizing: auto;
@@ -62,14 +64,29 @@
 }
 
 @media (max-width: 768px) {
+  .title-container{
+    width: 90%;
+  }
   .title {
-      font-size: 18px;
+      font-size: 25px;
   }
 }
 
 @media (max-width: 480px) {
+  .title-container{
+    left: 5px;
+  }
+  .ieee{
+    font-size: 80px;
+  }
+  .sb-ieee{
+    font-size: 30px;
+  }
+  .text-container{
+    margin-bottom: 20px;
+  }
   .title {
-      font-size: 16px;
+      font-size: 25px;
   }
 }
 

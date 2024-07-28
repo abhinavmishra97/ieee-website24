@@ -14,7 +14,7 @@ const Title = () => {
                             <p className="ieee">IEEE</p>
                             <ReactPlayer url={logoTr}
                                 className="logo-video"
-                                width="190px"
+                                width="120px"
                                 height="auto"
                                 playing={true}
                                 loop={true}
