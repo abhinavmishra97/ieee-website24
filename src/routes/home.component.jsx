@@ -8,6 +8,7 @@ import Team from "../components/team/team.component";
 import WieAbout from "../components/wie-about/wieAbout.component";
 import WIEComponent from "../components/wie/wie.component";
 import members from "../data/members";
+import AnimatedFlexCards from "../components/expadableCard/card.component";
 import './home.style.css'
 
 const containerVariants = {
@@ -24,10 +25,12 @@ const Home = () => {
             <section id="aboutus">
                 <AboutSBJIIT id="aboutus" />
             </section>
+            <AnimatedFlexCards/>
             <section id="wie">
                 <WieAbout />
                 <WIEComponent />
             </section>
+            {/* <Explore/> */}
             <section id="team">
                 <Team members={members} />
             </section>
