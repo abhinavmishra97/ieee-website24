@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import './card.style.css';
-import bgImg from '../../assets/wie-imgs/wie-mission.jpg';
+
+import bgImg1 from '../../assets/events/1.jpg';
+import bgImg2 from '../../assets/events/2.jpg';
+import bgImg3 from '../../assets/events/3.jpg';
+import bgImg4 from '../../assets/events/4.jpg';
+import bgImg5 from '../../assets/events/5.jpg';
+import bgImg6 from '../../assets/events/6.jpg';
+
 import Typewriter from "typewriter-effect";
 
 const AnimatedFlexCards = () => {
@@ -32,7 +39,7 @@ const AnimatedFlexCards = () => {
                         id="c1"
                         onMouseEnter={() => handleMouseEnter('c1')}
                         onMouseLeave={handleMouseLeave}
-                        style={{ backgroundImage: `url(${bgImg})` }}
+                        style={{ backgroundImage: `url(${bgImg1})` }}
                     >
                         <div className="row">
                             <div className="vertical-text">IEEE DAY</div>
@@ -48,7 +55,7 @@ const AnimatedFlexCards = () => {
                         id="c2"
                         onMouseEnter={() => handleMouseEnter('c2')}
                         onMouseLeave={handleMouseLeave}
-                        style={{ backgroundImage: `url(${bgImg})` }}
+                        style={{ backgroundImage: `url(${bgImg2})` }}
                     >
                         <div className="row">
                             <div className="vertical-text">TECH BLOCKS</div>
@@ -64,7 +71,7 @@ const AnimatedFlexCards = () => {
                         id="c3"
                         onMouseEnter={() => handleMouseEnter('c3')}
                         onMouseLeave={handleMouseLeave}
-                        style={{ backgroundImage: `url(${bgImg})` }}
+                        style={{ backgroundImage: `url(${bgImg3})` }}
                     >
                         <div className="row">
                             <div className="vertical-text">XENITH</div>
@@ -80,7 +87,7 @@ const AnimatedFlexCards = () => {
                         id="c4"
                         onMouseEnter={() => handleMouseEnter('c4')}
                         onMouseLeave={handleMouseLeave}
-                        style={{ backgroundImage: `url(${bgImg})` }}
+                        style={{ backgroundImage: `url(${bgImg4})` }}
                     >
                         <div className="row">
                             <div className="vertical-text">QUIZZES</div>
@@ -96,7 +103,7 @@ const AnimatedFlexCards = () => {
                         id="c5"
                         onMouseEnter={() => handleMouseEnter('c5')}
                         onMouseLeave={handleMouseLeave}
-                        style={{ backgroundImage: `url(${bgImg})` }}
+                        style={{ backgroundImage: `url(${bgImg5})` }}
                     >
                         <div className="row">
                             <div className="vertical-text">WEBINAR</div>
@@ -112,7 +119,7 @@ const AnimatedFlexCards = () => {
                         id="c6"
                         onMouseEnter={() => handleMouseEnter('c6')}
                         onMouseLeave={handleMouseLeave}
-                        style={{ backgroundImage: `url(${bgImg})` }}
+                        style={{ backgroundImage: `url(${bgImg6})` }}
                     >
                         <div className="row">
                             <div className="vertical-text">WORKSHOP</div>
