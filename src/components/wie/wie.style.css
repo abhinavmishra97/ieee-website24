@@ -8,6 +8,7 @@
     text-align: center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    
 }
 
 .wi{
@@ -70,7 +71,7 @@
 
     height: auto;
     border-radius: 19px;
-    color: #6cb2ec;
+    color: #000000;
     font-size: 1.5rem;
     filter: brightness(2.6);
     border: 8px solid #072833;
@@ -185,6 +186,16 @@
     color: rgba(255, 255, 255, 0.7);
     font-family: "Montserrat";
     font-weight: 300;
+}
+
+.front .inner p,
+.back .inner p {
+    color: black;
+}
+
+.back .inner span,
+.front .inner span {
+    color: black; 
 }
 
 @media screen and (max-width: 64rem) {

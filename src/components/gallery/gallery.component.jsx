@@ -23,8 +23,8 @@ import "./gallery.style.css";
 
 const Gallery = () => {
   return (
-    <div className="container">
-      <h1 className="heading">GALLERY</h1>
+    <div className="gallery-container">
+      <h1 className="gallery-heading">GALLERY</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
