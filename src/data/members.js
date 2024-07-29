@@ -1,3 +1,6 @@
+import abhaySir from "../assets/core-team-members/abhay-sir.jpeg";
+import shrutiMam from "../assets/core-team-members/shruti-kalra-mam.jpg";
+
 import vimarshSir from "../assets/core-team-members/vimarsh_mishra.png";
 import devanshiMam from "../assets/core-team-members/Devanshi Mishra.jpeg";
 import krishnaSir from "../assets/core-team-members/Krishna_Agrawal.jpg";
@@ -18,8 +21,18 @@ import vanishaMam from "../assets/core-team-members/Vanisha Agarwal_.jpg";
 
 const members = [
   {
+    image: abhaySir,
+    name: "Dr. Abhay Kumar",
+    post: "Faculty Coordinator",
+  },
+  {
+    image: shrutiMam,
+    name: "Dr. Shruti Kalra",
+    post: "Faculty Coordinator",
+  },
+  {
     image: vimarshSir,
-    name: "Vimarsh Sir",
+    name: "Vimarsh Mishra",
     post: "Chairperson",
   },
   {
