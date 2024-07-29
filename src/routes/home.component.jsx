@@ -9,6 +9,7 @@ import WieAbout from "../components/wie-about/wieAbout.component";
 import WIEComponent from "../components/wie/wie.component";
 import members from "../data/members";
 import AnimatedFlexCards from "../components/expadableCard/card.component";
+// import ImageSlider from "../components/gallery/gallery.component";
 import './home.style.css'
 
 const containerVariants = {
@@ -25,15 +26,17 @@ const Home = () => {
             <section id="aboutus">
                 <AboutSBJIIT id="aboutus" />
             </section>
-            <AnimatedFlexCards/>
+            <section id="events">
+                <AnimatedFlexCards />
+            </section>
             <section id="wie">
                 <WieAbout />
                 <WIEComponent />
             </section>
-            {/* <Explore/> */}
             <section id="team">
                 <Team members={members} />
             </section>
+            {/* <ImageSlider/> */}
             <footer id="contactus">
                 <Footer />
             </footer>
