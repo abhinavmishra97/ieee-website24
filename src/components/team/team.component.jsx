@@ -7,13 +7,13 @@ const Team = ({ members }) => {
   return (
     <div className="team-component">
       <h1>
-        <Typewriter
+        {/* <Typewriter
           options={{
             strings: ["MEET THE TEAM"],
             autoStart: true,
             loop: true,
-          }}
-        />
+          }} /> */}
+        MEET THE TEAM
       </h1>
 
       <hr />
