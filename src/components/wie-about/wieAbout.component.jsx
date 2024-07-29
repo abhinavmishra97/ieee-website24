@@ -4,7 +4,8 @@ import WIE from "../../assets/wie-imgs/WIE.jpg";
 const WieAbout = () => {
     return (
         <div className="WieAbout">
-            <h2 className="vim">Women In Engineering</h2>
+            <h2 className="vim">WOMEN IN ENGINEERING</h2>
+            <hr/>
             <div className="WieAboutContent">
                 <div className="WieAboutPhoto">
                     <img src={WIE} alt="Wie About Photo" />

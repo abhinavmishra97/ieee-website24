@@ -29,25 +29,23 @@ body {
   backdrop-filter: blur(10px);
   transition: all 0.5s ease-in-out;
 }
+
 .vim {
-  font-family: "Lato", sans-serif;
-  font-size: 9vh;
-  text-decoration: underline;
+  font-size: 3rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #7ACFFF;
-  background-color: white;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 5px;
+}
+
+.WieAbout hr {
+  border: 1px solid whitesmoke;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .WieAbout {
   margin: 40px auto;
   padding: 0;
- 
+  margin-top: 60px;
   max-width: 85%;
 }
 
@@ -83,6 +81,7 @@ body {
     padding-bottom: 4px;
     padding-top: 4px;
   }
+
   .WieAboutContent p ul {
     padding: 4px;
     margin: 2px;
@@ -96,6 +95,7 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: justify;
 }
+
 p {
   margin: 0;
   padding: 0;
@@ -112,19 +112,14 @@ ul {
 li {
   unicode-bidi: isolate;
 }
+
 .wie-events {
   font-family: "Lato", sans-serif;
   font-size: 6vh;
-  text-align: left;
-  color: #7ACFFF;
-  background-color: white;
-  margin-bottom: 1px;
-  padding: 1px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   text-decoration: underline;
 }
+
 .backt {
   font-size: 6vh;
   color: white;
