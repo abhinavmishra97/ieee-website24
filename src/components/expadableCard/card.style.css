@@ -9,6 +9,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.eventTitle{
+    margin-bottom: 2rem;
+}
+
 .eventTitle h1 {
     font-size: 2.25rem;
     text-align: center;
@@ -16,7 +20,7 @@
 
 .eventTitle hr {
     border: 0.0625rem solid whitesmoke;
-    max-width: 25rem;
+    max-width: 40rem;
     margin: auto;
 }
 
@@ -112,8 +116,7 @@
     text-orientation: mixed;
     transform: rotate(180deg);
     position: absolute;
-    left: 0;
-    bottom: 1rem;
+    bottom: 2rem;
     width: 100%;
     text-align: center;
     font-size: 1.5rem;

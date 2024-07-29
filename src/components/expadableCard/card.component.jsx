@@ -21,13 +21,7 @@ const AnimatedFlexCards = () => {
         <>
             <div className='eventTitle'>
                 <h1 >
-                    <Typewriter
-                        options={{
-                            strings: ["EVENTS"],
-                            autoStart: true,
-                            loop: true,
-                        }}
-                    />
+                    EVENTS
                 </h1>
                 <hr />
             </div>
