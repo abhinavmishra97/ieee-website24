@@ -88,7 +88,7 @@ const AnimatedFlexCards = () => {
                         <div className="row">
                             <div className="description">
                                 <h2>QUIZES</h2>
-                                <p></p>
+                                <p>Experience the excitement of testing your knowledge with our captivating and riveting quizzes like the ones at IEEE day! Challenge your friends, tune up your skills, and stand a chance to win amazing goodies! Great opportunity with a mishmash of fun and learning</p>
                             </div>
                         </div>
                     </div>
