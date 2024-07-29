@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './card.style.css';
 
-import bgImg1 from '../../assets/events/1.jpg';
+import bgImg1 from '../../assets/events/1.png';
 import bgImg2 from '../../assets/events/2.jpg';
 import bgImg3 from '../../assets/events/3.jpg';
 import bgImg4 from '../../assets/events/4.jpg';

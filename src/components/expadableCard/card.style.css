@@ -20,7 +20,7 @@
 
 .eventTitle hr {
     border: 0.0625rem solid whitesmoke;
-    max-width: 40rem;
+    max-width: 25rem;
     margin: auto;
 }
 
@@ -35,6 +35,7 @@
     width: 5rem;
     border-radius: 0.75rem;
     background-size: cover;
+    background-position: center;
     cursor: pointer;
     overflow: hidden;
     border-radius: 2rem;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay';  
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 import slide_image_1 from '../../assets/gallery/img_1.jpg';
 import slide_image_2 from '../../assets/gallery/img_2.jpg';
@@ -18,8 +18,7 @@ import slide_image_8 from '../../assets/gallery/img_8.jpg';
 import slide_image_9 from '../../assets/gallery/img_9.jpg';
 import slide_image_10 from '../../assets/gallery/img_10.jpg';
 
-import "./gallery.style.css";
-
+import './gallery.style.css';
 
 const Gallery = () => {
   return (
@@ -32,52 +31,27 @@ const Gallery = () => {
         centeredSlides={true}
         loop={true}
         slidesPerView={'auto'}
+        speed={600}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: 2.5,
         }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          clickable: true,
+        pagination={{ clickable: true }}
+        navigation={{ clickable: true }}
+        autoplay={{
+          delay: 3000, 
+          disableOnInteraction: false,
         }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="swiper_container"
       >
-        <SwiperSlide>
-          <img src={slide_image_1} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_2} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_4} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_6} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_7} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_8} alt="slide_image" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src={slide_image_9} alt="slide_image" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src={slide_image_10} alt="slide_image" />
-        </SwiperSlide>
-
-
+        {[slide_image_1, slide_image_2, slide_image_3, slide_image_4, slide_image_6, slide_image_7, slide_image_8, slide_image_9, slide_image_10].map((image, index) => (
+          <SwiperSlide key={index}>
+            <img src={image} alt={`slide_image_${index + 1}`} />
+          </SwiperSlide>
+        ))}
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>
