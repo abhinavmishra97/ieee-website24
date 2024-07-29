@@ -1,16 +1,19 @@
 
 .gallery-container {
   max-width: 100rem;
-  padding: 4rem 1rem;
-  margin: 0 auto;
 }
 
 .gallery-heading {
-  padding: 1rem 0;
-  font-size: 4.7rem;
+  font-size: 3rem;
   text-align: center;
-  color: #000;
   margin-left: 2px;
+}
+
+.gallery-container hr{
+  border: 1px solid whitesmoke;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .swiper_container {

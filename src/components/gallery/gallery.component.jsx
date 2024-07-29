@@ -25,6 +25,7 @@ const Gallery = () => {
   return (
     <div className="gallery-container">
       <h1 className="gallery-heading">GALLERY</h1>
+      <hr />
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
