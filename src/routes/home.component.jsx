@@ -11,6 +11,7 @@ import members from "../data/members";
 import AnimatedFlexCards from "../components/expadableCard/card.component";
 // import ImageSlider from "../components/gallery/gallery.component";
 import './home.style.css'
+import Gallery from "../components/gallery/gallery.component";
 
 const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -35,6 +36,9 @@ const Home = () => {
             </section>
             <section id="team">
                 <Team members={members} />
+            </section>
+            <section id="gallery">
+                <Gallery />
             </section>
             {/* <ImageSlider/> */}
             <footer id="contactus">
