@@ -20,7 +20,7 @@ const Team = ({ members }) => {
 
       <ul className="honeycomb">
         {members.map((member, index) => (
-            <li className="honeycomb-cell">
+            <li className="honeycomb-cell" key={member.image}>
               <img
                 src={member.image}
                 alt={member.name}

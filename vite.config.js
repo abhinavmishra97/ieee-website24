@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/ieee-website24/",
+  // base: "/ieee-website24/",
+  build: {
+    outDir: "dist",
+  }
 });
